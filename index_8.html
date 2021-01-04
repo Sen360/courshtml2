@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+​
+</head>
+​
+<body>
+    <header>
+        <div class="box">
+            <div style="background-color: blueviolet;">One</div>
+            <div style="background-color: green;">Two</div>
+        </div>
+​
+        <nav>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container term">
+        <div class="grid">
+            <div class="un">1</div>
+            <div class="deux">2</div>
+        </div>
+        <article>
+            <h1>Présentation</h1>
+            <div class="grid fluid">
+                <div class="un">Photo</div>
+                <div class="deux">texte</div>
+            </div>
+            <div class="conteneur">
+                <div class="enfant">
+                    <h3>title</h3>
+                    <img src="assets/images/raw.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="enfant">
+                    <h3>title</h3>
+                    <img src="assets/images/raw.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="enfant">
+                    <h3>title</h3>
+                    <img src="assets/images/raw.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="enfant">
+                    <h3>title</h3>
+                    <img src="assets/images/raw.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </article>
+        <aside></aside>
+    </section>
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+    <style>
+        body {
+            margin: 0;
+        }
+​
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+​
+        .box>* {
+            flex: 1 1 160px;
+        }
+​
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+​
+        li {
+            float: none;
+            display: inline-block;
+            *display: inline;
+            /* ie7 fix */
+            *zoom: 1;
+            /* hasLayout ie7 trigger */
+            vertical-align: top;
+        }
+​
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+​
+        li a:hover {
+            background-color: #111;
+        }
+​
+        .grid {
+            display: grid;
+            grid-auto-rows: minmax(100px, auto);
+        }
+​
+        .enfant img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+​
+        .fluid {
+            margin: 20px;
+        }
+​
+        .container {
+            display: block;
+            top: 0;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+​
+        .term{
+            margin-top:15px
+        }
+​
+        .un {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: burlywood;
+        }
+​
+        .deux {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: blueviolet;
+        }
+​
+        article {
+            height: 700px;
+            float: left;
+            background-color: #66FFFF;
+            width: 70%;
+        }
+​
+        aside {
+            height: 700px;
+            float: right;
+            width: 30%;
+            background-color: yellow;
+        }
+​
+        .footer {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: #45a1ff;
+            color: #fff;
+        }
+​
+        .footer p {
+            color: white;
+            text-align: center;
+        }
+​
+        .conteneur {
+            display: flex;
+            justify-content: space-between;
+        }
+​
+        .enfant {
+            margin: 25px;
+            flex-basis: 200px;
+            background-color: yellow;
+        }
+    </style>
+</body>
+​
+</html>

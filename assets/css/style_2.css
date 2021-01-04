@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: Cambria, serif;
+}
+
+h2 {
+    color: blue;
+    background-color: cadetblue;
+}
+
+h3 {
+    font-weight: bold;
+   display: inline;
+}
+
+
+.entete {
+    background-color: cadetblue;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-right: 30px;
+}
+
+.entete span  {
+    font-weight: bold;
+}
+
+.adresse {
+    float: right;
+}
+
+
