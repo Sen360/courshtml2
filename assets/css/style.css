@@ -98,4 +98,32 @@ ol li {
     background-color: yellow; 
 }
     
+.red {
+    color: red;
+    }
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
 
+.mystyle {
+    width: 300px;
+    height: 500px;
+    background-color: cornflowerblue;
+    color: crimson;
+    font-size: 25px;
+}
+
+.my_style_2 {
+    color: white;
+    background-color: black;
+    border:1px dotted black;
+    padding-left: 5px;
+}
+
+.style_button {
+    background-color: blue;
+    height: 130px;
+}
